@@ -1,0 +1,162 @@
+\documentclass{beamer}
+\usetheme{Montpellier}
+\usecolortheme{default}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{color}
+
+
+\title[Introduction to Typesetting in \LaTeX{}]{
+    Introduction to Typesetting in \LaTeX{}
+}
+\subtitle{[\textcolor{red}{DRAFT}]}
+\author{Mark Ng}
+\institute[NUS]{
+    National University of Singapore\\
+    \medskip
+    \textit{latexify@nusmathsoc.org}
+}
+\date{\today}
+
+
+\begin{document}
+
+    \begin{frame}
+        \titlepage
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{[Important] Announcements.}
+        If you haven't done this yet:
+        \begin{itemize}
+            \item Download the \TeX{} package; the `language'.
+            \begin{itemize}
+                \item Windows: \url{http://miktex.org/download}
+                \item Mac OS X: \url{http://tug.org/mactex/mactex-download.html}
+            \end{itemize}
+            \item Download Texmaker; the `editor'.
+            \begin{itemize}
+                \item Go to \url{http://www.xm1math.net/texmaker/download.html}
+            \end{itemize}
+            \item Workshop material (including these slides) available at:
+            \begin{center}
+                \url{https://github.com/mollymr305/latex-workshop-2017}
+            \end{center}
+        \end{itemize}
+    \end{frame}
+
+
+    \begin{frame}
+        \frametitle{Today's Agenda}
+        \tableofcontents
+    \end{frame}
+
+    \section{Introduction}
+    \subsection{Brief Introduction to \LaTeX{}?}
+    \begin{frame}
+        \frametitle{What is \LaTeX{}?}
+        \begin{figure}[H]
+            \includegraphics[scale=0.2]{logo.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{What is \LaTeX{}?}
+        \begin{center}
+            \url{https://en.wikipedia.org/wiki/LaTeX}
+        \end{center}
+        \begin{itemize}
+            \item ``\emph{\dots a document preparation system}''
+            \item ``\emph{A TeX distribution such as TeX Live or MikTeX is used to produce an output file (such as PDF or DVI) suitable for printing or digital distribution.}''
+            \item ``\emph{LaTeX is widely used in academia for the communication and publication of scientific documents in many fields, including mathematics, statistics, computer science, engineering, chemistry, physics, economics, quantitative psychology, philosophy, and political science.}''
+        \end{itemize}
+    \end{frame}
+
+    \subsection{The \LaTeX ify Team.}
+    \begin{frame}
+        \frametitle{The \LaTeX ify Team.}
+        \begin{itemize}
+            \item We are a subcommittee of the NUS Mathematics Society.
+            \item Provide student solutions for past year papers under the Mathematics Department.
+        \end{itemize}
+    \end{frame}
+
+    \section{The Workshop}
+    \subsection{Prerequisites}
+    \begin{frame}
+        \frametitle{Prerequisites}
+        \begin{itemize}
+            \item No \LaTeX{} or programming background necessary.
+            \item You will need your own laptop with the downloaded software etc.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Prerequisites}
+        \begin{center}
+            Last resort for those who are unable to download the \TeX{} distribution or Texmaker in time \dots\\[3mm]
+            \url{https://www.overleaf.com}
+        \end{center}
+    \end{frame}
+
+    \subsection{Content}
+    \begin{frame}
+        \frametitle{Content}
+        Teach \textbf{basic} typesetting in \LaTeX.
+        \begin{itemize}
+            \item Text manipulation, mathematical notation, equations \dots
+            \item Basically `how to create a proper document'.
+            \item If time permits:
+            \begin{itemize}
+                \item Inserting tables, pictures, code snippets.
+                \item More advanced bibliography management (BibTeX).
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Content}
+        How it works:
+        \begin{itemize}
+            \item We will do a `live' demonstration.
+            \item Try to follow (i.e. mimick everything on your own laptop).
+            \item Raise your hand if you need any assistance; our \LaTeX{}ify Team members will try and help you out.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Content}
+        Just a reminder before we start this workshop proper.
+        \begin{center}
+            Workshop material available at:\\[3mm]
+            \url{https://github.com/mollymr305/latex-workshop-2017}
+        \end{center}        
+    \end{frame}
+
+    \section{Final Remarks}
+    \begin{frame}
+        \begin{itemize}
+            \item Additional resources for \LaTeX{}:
+            \begin{center}
+                \url{http://mollymr305.github.io}
+            \end{center}
+            \item Give us your feedback at:
+            \begin{center}
+                \url{http://mollymr305.github.io}
+            \end{center}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \Huge{\centerline{Thank You}}
+        \begin{center}
+            \begin{normalsize}
+                \emph{latexify@nusmathsoc.org}
+            \end{normalsize}
+        \end{center}
+    \end{frame}
+
+\end{document} 
