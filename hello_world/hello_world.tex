@@ -1,0 +1,240 @@
+% this is comment
+% this section is known as THE PREAMBLE
+\documentclass{article}
+% common math packages
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+% this is for defining theorems, lemmas, etc
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+% this is for adjusting margins
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=26mm,
+    right=20mm,
+    top=33mm,
+    bottom=38mm
+}
+% this package is for creating lists
+\usepackage{enumerate}
+% for figures
+\usepackage{graphicx}
+\usepackage{float}
+\title{My First Document}
+%\date{}
+\author{Mark Ng}
+
+% this section is known simply as THE TEXT
+\begin{document}
+    \maketitle
+    % this section is all about text editing
+    \section{Introduction}
+        \subsection{Lines of Text}
+            this is text. but
+            entering
+            a new line 
+            does not create a new line\\
+            this creates a new line\\[5.75mm]
+            this creates a new line 5.75 millimetres from the previous
+            \par this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph, this creates a new paragraph
+        \subsection{Some Text Formatting}
+            Let's list out a few methods of formatting 
+            This is normal text. \textbf{This is bold-faced text.} \textit{This is italicised text.} \emph{This is also italicised.} \underline{This is underlined text.}
+            \begin{center}
+                This is centralised text. \underline{\textbf{This is bold, underlined and centralised text.}}
+            \end{center}
+        \subsection{Some Special Characters}
+            Take note of the following special characters:
+            \begin{center}
+                \# \$ \% \^{} \& \{ \} $\backslash$
+            \end{center}
+            Take note of accents:
+            \begin{center}
+                L'H\^{o}pital's Rule, H\"{o}lder's Inequality, \dots, for more accents just Google
+            \end{center}
+            Quotation Marks: "this is a bad quote", ``this is a good quote''... in general never use ", always use ` and '.
+            \newpage
+
+    % this is by far the coolest section
+    \section{Mathematics}
+        In this section, we will cover the essential features of the \LaTeX{} mathematical environment.
+        \subsection{Basic Mathematics}
+            The most basic mathematical environment: $x + y - z = 0$... note the difference from x + y - z = 0.
+            % this is how to make a numbered list:
+            \begin{enumerate}
+                \item Simple Mathematical Symbols.
+                \begin{enumerate}
+                    \item One useful reference in general is Detexify (Google it).
+                    \item Greek: $\alpha, \beta, \gamma, \delta,\sigma, \Sigma, \Gamma$... compare $\epsilon > 0$ with $\varepsilon > 0$... also $\phi = \varphi$
+                    \item Common Symbols: $\{1, 2, 3\} \subseteq \{1, 2, 3, 4\}$, $\infty \not \in R$ a function $f(x) = x + 2$... $\sin x, \cos x, \log x$... by the way, please do not write $sin(x), cos(x), log(x)$... 
+                    \item More Symbols: $f: A \to B, g:B \to X \implies g \circ f : A \to C$
+                \end{enumerate}
+                \item Subscripts, Superscripts \& Fractions.
+                \begin{enumerate}
+                    \item Subcripts: $x_{1}, x_{2}, x_{3}, \dots , x_{n+1}$
+                    \item Superscripts: $x^{1}, 2^{31}, 100^{x}$
+                    \item Fractions: $\frac{1}{2}$, $\frac{1}{1 + \frac{1}{n}}, \frac{22}{7} \approx \pi$
+                    \item Compositions: $e$ is the limit of the sequence $x_{n} = (1 + \frac{1}{n})^{n}$ as $n \to \infty$... $\omega_{1_{2_{3}}}^{4^{5^{6}}}$... always remember subscripts first, then superscripts ... $\alpha_{1}^{\varepsilon}$.
+                \end{enumerate}
+                \item Mathematical Fonts
+                \begin{enumerate}
+                    \item Default: $a, b, c, d, e$
+                    \item BlackboardBold: $x \in \mathbb{R}$... $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \subset \mathbb{H}$
+                    \item Bold-faced: $\mathbf{P}(X \leq a) = \frac{1}{3}$, $\mathbf{E}[X] = 0$ whereas $\mathbf{Var}[X] = 1$
+                    \item Caligraphy: $(\Omega, \mathcal{A}, \mu)$ and $A \in \mathcal{A}$... ($\sigma$-algebra)
+                    \item Fraktur: $\mathfrak{ABCDEFG}$... Cardinality of the continuum is $\mathfrak{c}$. $\mathfrak{Re}[x + iy] = x$
+                \end{enumerate}
+            \end{enumerate}
+        % this is slightly more complex math
+        \subsection{Equations}
+            The first thing we need to know is how to write an ``equation''.\\[3mm] 
+            This is a numbered equation:
+            \begin{equation}
+                e^{i\pi} + 1 = 0.
+            \end{equation}
+            This is an unnumbered equation: 
+            \begin{equation*}
+                \bar{X} = \frac{1}{n} (X_{1} + X_{2} + \dots + X_{n}).
+            \end{equation*}
+            Let's learn how to write split equations
+            \begin{equation}
+                \begin{split}
+                |x - z| & = |x - y + y - z|\\
+                        & \leq |x - y| + |y - z|\\
+                        & < |x - y| + |y - z| + \varepsilon.
+                \end{split}
+            \end{equation}
+        \subsection{Integrals, Limits, Summations}
+            Integrals, limits, summations...
+            \begin{equation}
+                \int_{a}^{b} f(x)\,\text{d}x = F(b) - F(a).
+            \end{equation}
+            \begin{equation}
+                \iint f(x_{1}, x_{2})\,\text{d}x_{1}\text{d}x_{2}.
+            \end{equation}
+            \begin{equation}
+                \iiint f(x_{1}, x_{2}, x_{3})\,\text{d}x_{1}\text{d}x_{2}\text{d}x_{3}.
+            \end{equation}
+            \begin{equation}
+                \iiiint f(x_{1}, x_{2}, x_{3}, x_{4})\,\text{d}x_{1}\text{d}x_{2}\text{d}x_{3}\text{d}x_{4}.
+            \end{equation}
+            \begin{equation}
+                \idotsint f(x_{1}, \dots, x_{n})\,\text{d}x_{1}\cdots\text{d}x_{n}.
+            \end{equation}
+            \begin{equation}
+                \oint_{\Gamma} f(z)\, \text{d}z.
+            \end{equation}
+            \begin{equation}
+                \lim_{n\to\infty} \frac{1}{n^{2} + n + 1} = 0.
+            \end{equation}
+            \begin{equation}
+                \sum_{k=1}^{n} k = \frac{n}{2}(n+1).
+            \end{equation}
+            \begin{equation}
+                \sum_{i=1}^{\infty}\sum_{j=1}^{\infty} \alpha_{ij}.
+            \end{equation}
+            \begin{equation}
+                F(x) = f(x) + \left(\int_{0}^{x} g(t)\,\text{d}t + \dots + C\right)
+            \end{equation}
+            \begin{equation}
+                \pi = \sqrt{6\sum_{n=1}^{\infty} \frac{1}{n^{2}}}
+            \end{equation}
+        \subsection{Matrices, Vectors}
+            % `standard' matrix
+            \begin{equation}
+                A = 
+                \begin{pmatrix}
+                    a_{11} & a_{12} \\
+                    a_{21} & a_{22}
+                \end{pmatrix}.
+            \end{equation}
+            % `box' matrix
+            \begin{equation}
+                B = 
+                \begin{bmatrix}
+                b_{11} & b_{12} \\
+                b_{21} & b_{22}
+                \end{bmatrix}.
+            \end{equation}
+            Let $\vec{v} \in \mathbb{R}^{n}$, we may write this vector as
+            \begin{equation}
+                \vec{v} = 
+                \begin{bmatrix}
+                    x_{1} \\
+                    x_{2} \\
+                    \vdots \\
+                    x_{n}
+                \end{bmatrix}.
+            \end{equation}
+
+    % Content Management
+    \section{Theorems, Lemmas, Definitions, Corollary}
+        This section is mainly for Mathematics majors.
+        \begin{definition}[Convergent Sequences]\label{definition: convergent sequences}
+            Let $(x_{n})_{n=1}^{\infty}$ be a sequence in $\mathbb{R}$. A sequence is said to converge to a limit $\ell$ if, for any given $\varepsilon > 0$ there exists $N \in \mathbb{N}$ such that $n \geq N$ implies $|x_{n} - \ell| < \epsilon$. We denote this by $x_{n} \to \ell$, or
+            \begin{equation}
+                \lim_{n\to\infty} x_{n} = \ell
+            \end{equation}
+        \end{definition}
+        Based on Definition~\ref{definition: convergent sequences} alone, we can prove the following Lemma.
+        \begin{lemma}\label{lemma: property of convergent sequences}
+            If $\lim_{n\to\infty} x_{n} = \ell$, then $\lim_{n\to\infty} |x_{n}| = |\ell|$.
+        \end{lemma}
+        \begin{proof}
+            The proof is left as an exercise.
+        \end{proof}
+        \begin{remark}
+            The converse of Lemma~\ref{lemma: property of convergent sequences} is not true in general!
+        \end{remark}
+        \begin{theorem}[Central Limit Theorem]\label{theorem: central limit theorem}
+            Let $X_{1}, X_{2}, X_{3}, \dots$ be a sequence of IID random variables with finite mean $\mu$ and variance $\sigma^{2}$. Then, as $n \to \infty$
+            \begin{equation}
+                \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \overset{d}{\longrightarrow} \mathcal{N}(0, 1).
+            \end{equation}
+        \end{theorem}
+        Theorem~\ref{theorem: central limit theorem} was proved by Pierre-Simon Laplace (see~\cite{pierre-simon-laplace-clt}) a long time ago.
+        \begin{corollary}
+            Let $X \sim \text{Binomial}(n, p)$ and set $q = 1-p$. Then for sufficiently large values of $n \in \mathbb{N}$, the distribution of $X$ can be approximated by
+            \begin{equation}
+                Y \sim \mathcal{N}(np, npq).
+            \end{equation}
+        \end{corollary}
+    \newpage
+
+    % others
+    \section{Other Stuff}
+        % how to construct tables
+        \subsection{Tables}
+            This is a table:
+            \begin{center}
+                \begin{tabular}{| c | c |}
+                    \hline
+                    Name & Favourite Food\\
+                    \hline
+                    Mark & Cookies\\
+                    Einstein & Sandwiches\\
+                    \hline
+                \end{tabular}
+            \end{center}
+        % how to insert figures
+        \subsection{Figures}
+            This is a figure:
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.5\textwidth]{meme.jpg}
+                \caption{What?!?!?}
+                \label{fig: nice figure}
+            \end{figure}
+
+    % the most basic bibliography
+    \begin{thebibliography}{100}
+        \bibitem{mark} Mark Ng (2017), ``\emph{A First Course in \LaTeX }''. NUS Mathematics Society.
+        \bibitem{pierre-simon-laplace-clt} Pierre-Simon Laplace (1812), ``\emph{Th\'{e}orie analytique des probabilit\'{e}s}''. Paris, Ve. Courcier.
+    \end{thebibliography}
+
+\end{document}
