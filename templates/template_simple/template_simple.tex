@@ -1,0 +1,287 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Extremely Basic LaTeX Template for Undergraduate Reports    %
+% e.g. Final Year Project, UROPS submission                   %
+% written by Mark N                                           %
+% Blog: http://mollymr305.github.io/                          %
+% GitHub: https://github.com/mollymr305                       %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[]{fullpage}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+% uncomment below to switch to times new roman font
+% \usepackage{times}
+\usepackage{enumerate}
+\usepackage{graphicx}
+% to do list
+\usepackage[colorinlistoftodos]{todonotes}
+% text colors
+\usepackage{xcolor}
+\definecolor{OliveGreen}{rgb}{0,0.6,0}
+\definecolor{light-gray}{gray}{0.95}
+\usepackage{verbatim}
+\usepackage{url}
+\urlstyle{itshape}
+\usepackage[toc,page]{appendix}
+\usepackage[headsep=1.0cm,headheight=15pt]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{array}
+\renewcommand{\thesubfigure}{\roman{subfigure}}
+\usepackage{fancyhdr}
+% pdf bookmarking, etc
+\usepackage[bookmarks]{hyperref}
+% theorems
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{example}[definition]{Example}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+% bold citation-style
+% \usepackage{cite}
+% \renewcommand{\citeform}[1]{\textbf{#1}}
+
+\begin{document}
+    % title page structure
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+
+            \LARGE
+            \textbf{My Favourite Topology}
+
+            \vspace{0.5cm}
+
+            \large
+            by Ng Say-Yao Mark
+
+            \vspace{1.5cm}
+
+            \vfill
+
+            \vspace{1.0cm}
+
+            Department of Mathematics\\
+            National University of Singapore\\
+            2016/2017
+        \end{center}
+    \end{titlepage}
+    % initialize page numbering
+    \pagenumbering{roman}
+    % acknowledgements
+    \section*{Acknowledgements}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at~\cite{munkres-topology,a-taste-of-topology,algebraic-topology,elements-of-algebraic-topology,graphs-surfaces-homology,lectures-alg-topology,topology-and-its-applications}.
+
+    % summary
+    \newpage
+    \section*{Summary}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+
+    % authors contribution
+    \newpage
+    \section*{Author's Contributions}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+
+        Et purto quaeque has. Ut decore populo ocurreret qui, duo ei inimicus interesset. Eu qui quot integre veritus, iusto melius commune vim ei, mel brute vivendum consetetur in. Vide nonumy apeirian ut has, ceteros menandri similique eam at.
+
+        Equidem pericula definitionem mea ut, hendrerit inciderint at eum. Ne propriae eligendi ponderum his, duo ne dicunt option, et consul doctus ius. Cum et deseruisse sententiae consetetur, ut natum propriae usu, suas nihil reformidans mel id. In sit quaeque lobortis posidonium, mel insolens mediocrem no. Iisque adipisci maiestatis ut vis.
+
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \pagestyle{fancy}
+    \lhead{}
+    \pagenumbering{arabic}
+    \section{Introduction}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+        \subsection{General Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+            Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+            Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+        \subsection{Continuity and Homeomorphisms}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+            Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+            Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.        
+        \subsection{Compactness and Connectedness}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+            Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+            Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+    
+    \newpage
+    \section{Basic Topologies}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+        \subsection{The Metric Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+        \subsection{The Trivial Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+        \subsection{The Discrete Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+    
+    \newpage
+    \section{Essential Topologies}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+        \subsection{The Subspace Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+        \subsection{The Product Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+        \subsection{The Quotient Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+            Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+    \newpage
+    \section{Selected Topologies}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+        \subsection{The Box Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.        
+        \subsection{The Lower-limit Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+        \subsection{The Cofinite Topology}
+            Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+            Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+    \newpage
+    \addcontentsline{toc}{section}{References}
+    \begin{thebibliography}{100}
+        \bibitem{topology-and-its-applications} William F. Basener. \emph{Topology and Its Applications.} John Wiley \& Sons, Inc., 2006.
+        \bibitem{graphs-surfaces-homology} Peter Giblin. \emph{Graphs, Surfaces and Homology}. Cambridge University Press, 2010.
+        \bibitem{lectures-alg-topology} Sergey V. Matveev. \emph{Lectures on Algebraic Topology.} European Mathematical Society, 2006.
+        \bibitem{algebraic-topology} C.R.F Maunder. \emph{Algebraic Topology.} Dover Publications, 1996.
+        \bibitem{elements-of-algebraic-topology} James R. Munkres. \emph{Elements of Algebraic Topology.} Addison-Wesley, 1993.
+        \bibitem{munkres-topology} J.R. Munkres. \emph{Topology.} Featured Titles for Topology Series. Prentice Hall, Incorporated, 2000.
+        \bibitem{a-taste-of-topology} Volke Runde. \emph{A Taste of Topology.} Springer-Verlag New York, 2005.
+    \end{thebibliography}
+
+    \newpage
+    \appendix
+    \section{Axiom of Choice}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+
+        Et purto quaeque has. Ut decore populo ocurreret qui, duo ei inimicus interesset. Eu qui quot integre veritus, iusto melius commune vim ei, mel brute vivendum consetetur in. Vide nonumy apeirian ut has, ceteros menandri similique eam at.
+
+        Equidem pericula definitionem mea ut, hendrerit inciderint at eum. Ne propriae eligendi ponderum his, duo ne dicunt option, et consul doctus ius. Cum et deseruisse sententiae consetetur, ut natum propriae usu, suas nihil reformidans mel id. In sit quaeque lobortis posidonium, mel insolens mediocrem no. Iisque adipisci maiestatis ut vis.
+
+        Omittam omnesque vix ne, te quo debet consequat consequuntur. Novum causae bonorum has at, vix ea erant percipitur. Falli necessitatibus ea sea, nec ad aperiam lucilius. Sale oblique luptatum sea ne.
+
+        Id ornatus suscipit quaerendum sed, nam graecis omnesque in. At vis stet putent intellegam, eos in elit aperiam bonorum. Ne iriure repudiandae mei, lorem inani affert vel te. Soleat persecuti comprehensam vis ea, est solet laboramus eu. Consul mnesarchum pro ut. Eos repudiare scriptorem et, mei veri tacimates no.    
+    \newpage
+    \section{Zorn's Lemma}
+        Lorem ipsum dolor sit amet, ei eam quidam scripta meliore. Ius at autem possim comprehensam, per elitr detracto luptatum ex, quodsi utamur verterem cum te. Ea sea oratio eleifend, ex mea mandamus persequeris. Qui malorum dignissim id, vel ex iriure efficiantur. Ea eum reque ancillae.
+
+        Te nam antiopam scripserit, diam clita sensibus in usu, tamquam bonorum fierent ne has. Ludus labores quaerendum ne vix, vis graece postea honestatis ea. Per forensibus adolescens interpretaris ut. Fabellas salutatus vim ex, cu mel vide aliquam pericula. Vis te lorem populo. Putent detraxit repudiandae et mea, ex lorem ocurreret torquatos sed.
+
+        Et sed justo timeam sapientem. Graeci quodsi concludaturque sed in. Mel ea scripta corpora complectitur, congue partem te pri, minim commodo ne mei. Id vis delicata adipiscing, vix solet hendrerit at.
+
+        Vim dicta mnesarchum liberavisse ne, ut ubique utamur aperiri eam, nam ei eligendi pertinax senserit. In vim aeterno inciderint. Cu ius aliquam sensibus salutatus. Omnium vidisse mei eu. Sed cu indoctum pericula, ei usu inani erroribus. Volumus disputationi eam at.
+
+        Eam ne augue putant. Pri malis appetere te, ex commune appareat per. Eam ut atqui appetere, est te constituto appellantur suscipiantur, vix inimicus oportere te. Ne electram vulputate honestatis sit, minimum interesset delicatissimi sea at.
+
+        Et purto quaeque has. Ut decore populo ocurreret qui, duo ei inimicus interesset. Eu qui quot integre veritus, iusto melius commune vim ei, mel brute vivendum consetetur in. Vide nonumy apeirian ut has, ceteros menandri similique eam at.
+
+        Equidem pericula definitionem mea ut, hendrerit inciderint at eum. Ne propriae eligendi ponderum his, duo ne dicunt option, et consul doctus ius. Cum et deseruisse sententiae consetetur, ut natum propriae usu, suas nihil reformidans mel id. In sit quaeque lobortis posidonium, mel insolens mediocrem no. Iisque adipisci maiestatis ut vis.
+
+        Omittam omnesque vix ne, te quo debet consequat consequuntur. Novum causae bonorum has at, vix ea erant percipitur. Falli necessitatibus ea sea, nec ad aperiam lucilius. Sale oblique luptatum sea ne.
+
+\end{document}
