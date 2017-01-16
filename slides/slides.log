@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.9)  16 JAN 2017 11:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.9)  16 JAN 2017 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,8 +895,6 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 49.
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 49.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -904,6 +902,8 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 49.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 49.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 49.
 [2
@@ -976,7 +976,7 @@ exlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
 Output written on /Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/s
-lides/slides.pdf (13 pages, 217574 bytes).
+lides/slides.pdf (13 pages, 217640 bytes).
 PDF statistics:
  496 PDF objects out of 1000 (max. 8388607)
  439 compressed objects within 5 object streams
