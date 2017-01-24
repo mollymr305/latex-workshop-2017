@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1484573851 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.pdf" "slides" 1484573853
-  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.aux" 1484573853 4546 6846fec6acfe936f69f2840258c1c28e ""
-  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" 1484573851 5285 7afeb64a617f25037a562013407325a6 ""
+["pdflatex"] 1485276310 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.pdf" "slides" 1485276312
+  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.aux" 1485276312 4546 6846fec6acfe936f69f2840258c1c28e ""
+  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" 1485276310 5520 17b49d31722b708c28174cc895dc4535 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
   "/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc" 1254269338 2359 de53213020575850c8f8debc35095765 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -194,11 +194,11 @@
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1397032177 3827028 1fd2d8c3dfb47246915ac26e14aadda4 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
   "logo.png" 1453625285 13765 259f980810967d05b619572dd4b81e0d ""
-  "slides.aux" 1484573853 4546 6846fec6acfe936f69f2840258c1c28e ""
-  "slides.nav" 1484573853 2497 9d23d34a66d88a48afc9f16176ebbeb0 ""
-  "slides.out" 1484573853 404 d7ae6d6d0c7875df15287f34f7dabad3 ""
-  "slides.tex" 1484573851 5285 7afeb64a617f25037a562013407325a6 ""
-  "slides.toc" 1484573853 426 0223fa0f601e830fdc3cfbbd1c97db24 ""
+  "slides.aux" 1485276312 4546 6846fec6acfe936f69f2840258c1c28e ""
+  "slides.nav" 1485276312 2497 9d23d34a66d88a48afc9f16176ebbeb0 ""
+  "slides.out" 1485276312 404 d7ae6d6d0c7875df15287f34f7dabad3 ""
+  "slides.tex" 1485276310 5520 17b49d31722b708c28174cc895dc4535 ""
+  "slides.toc" 1485276312 426 0223fa0f601e830fdc3cfbbd1c97db24 ""
   (generated)
   "slides.toc"
   "slides.out"

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1484573524 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.pdf" "hello_world" 1484573525
-  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.aux" 1484573525 1455 d47272030bcb2fb6c29766ee1ae88873 ""
-  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.tex" 1484573524 11330 0742680412404285d0446de2d5f5a7f8 ""
+["pdflatex"] 1485275766 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.pdf" "hello_world" 1485275767
+  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.aux" 1485275767 1459 e663709258c9d9f2011cba66b31ade2c ""
+  "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.tex" 1485275764 11334 3b9d151de8a500bd0bba429a3f89a209 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -90,12 +90,12 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1397032177 3827028 1fd2d8c3dfb47246915ac26e14aadda4 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "hello_world.aux" 1484573525 1455 d47272030bcb2fb6c29766ee1ae88873 ""
-  "hello_world.tex" 1484573524 11330 0742680412404285d0446de2d5f5a7f8 ""
+  "hello_world.aux" 1485275767 1459 e663709258c9d9f2011cba66b31ade2c ""
+  "hello_world.tex" 1485275764 11334 3b9d151de8a500bd0bba429a3f89a209 ""
   "meme.jpg" 1464526044 45933 637ea4123213d3f37de7c5fb270b1eab ""
   (generated)
-  "hello_world.log"
   "hello_world.aux"
+  "hello_world.log"
   "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.log"
   "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/hello_world/hello_world.pdf"
   "hello_world.pdf"
