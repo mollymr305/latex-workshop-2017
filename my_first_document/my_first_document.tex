@@ -1,0 +1,211 @@
+% this is a comment
+% this part is known as the PREAMBLE
+\documentclass{article}
+% common math packages
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+% this is for figures
+\usepackage{graphicx}
+\usepackage{float}
+% this is for adjusting margins
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=21mm,
+	right=21mm,
+	top=33mm,
+	bottom=38mm
+}
+% this is for managing theorems, lemmas, etc
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+% this is for creating lists
+\usepackage{enumerate}
+% this is the title
+\title{My First Document}
+\date{}
+\author{Mark Ng}
+
+% this part is known as the TEXT
+\begin{document}
+	\maketitle
+	\section{Introduction}
+		\subsection{Lines of Text}
+			\hspace{4mm} this is a text. but
+			entering
+			a 
+			new line
+			does not create a new line\\
+			this will create new line\\[5.75mm]
+			this creates a new line 5.75 millimetres below
+			\par this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph this is a new paragraph 
+		\subsection{Text Formatting}
+			Some formatting techniques:\\[3mm]
+			\textbf{this is bold-faced text}\\[3mm]
+			\emph{this is italicised text}\\[3mm]
+			\underline{this is underlined text}\\[3mm]
+			\textbf{\emph{\underline{this is interesting}}}
+			\begin{center}
+				this is centralised \textbf{bold-faced}		
+			\end{center}
+		\subsection{Some Special Characters}
+			Some special characters are:
+			\begin{center}
+				\# \$ \% \& \{ \} $\backslash$ \^{}
+			\end{center}
+			Here are some ways of writing accents:			
+			\begin{center}
+				L'H\^{o}pital, March\'{e}, H\"{o}lder's Inequality... for other accents just Google.
+			\end{center}
+			"This is a bad quote"...\\[3mm]
+			\emph{Remark.} Never use "\\[3mm]
+			``This is a good quote''\\
+			`This is also a good quote'
+
+	% this is the coolest section by far
+	\newpage
+	\section{Mathematics}
+		In this section, we will discuss essential features of the mathematics environment.
+		\subsection{Basic Mathematics}
+			The most basic mathematical environment is this $x + y - z = 1$. Compare this with x + y - z = 1.\\
+			Here's a list of basic math features:
+			\begin{enumerate}
+				\item Greek Symbols: Let $\varepsilon > 0$, or $\epsilon > 0$. $\alpha, \beta, \gamma, \delta, \pi, \xi, \phi, \varphi, \psi, \sigma, \Sigma, \Gamma$.
+				\item Common Symbols: $1 \in \{1, 2, 3, 4, 5\}$
+				\item More Common Symbols: $\infty \not \in \{1, 2, 3\}$.
+				\item Elementary Functions: $\sin(x), \cos(x), \exp(x), \log(x), \ln(x), \tan, \arctan(x), \dots$ remember not to write $sin(x)$ etc.
+				\item Some more: $f : A \to B, g: B \to C$
+				\item Even more: $g \circ f : A \to C$
+			\end{enumerate}
+			Let's talk about fractions, subscripts and superscripts...
+			\begin{enumerate}
+				\item Fractions: $\frac{1}{2}$, $\frac{1}{1 +\frac{1}{2}} = \frac{2}{3}$
+				\item Subscripts: $x_{1}, x_{2}, x_{3}, \dots, x_{2017}$
+				\item Superscripts: $x^{1}, x^{2}, \dots, x^{2017}$
+				\item Combinations: $(1 + \frac{1}{n})^{n} \to e$ as $n \to \infty$... Always remember, subscripts first followed by superscripts, e.g. $x_{n}^{2}$, $w_{1_{2}}^{3^{4}}$. $\alpha^{\epsilon}$
+			\end{enumerate}
+		\subsection{Mathematical Fonts}
+			Here are some useful fonts:
+			\begin{enumerate}
+				\item Default: $a, b, c, d, e$
+				\item These are not default fonts:
+				\begin{enumerate}[(i)]
+					\item Blackboard Bold: $\mathbb{Q} \subset \mathbb{R}$
+					\item Bold-faced: $\mathbf{P}(X = k) = 0.4$
+					\item Caligraphy: $A \in \mathcal{A} \cup \mathcal{B}$, $(\Omega, \mathcal{F}, \mu)$
+					\item Fraktur: $\mathfrak{ABCDEFG}$.
+				\end{enumerate}
+			\end{enumerate}
+		\subsection{Equations}
+			% itemize: creates an unnumbered list.
+			\begin{itemize}
+				\item An example of an numbered equation is
+				\begin{equation}
+					e^{i\pi} + 1 = 0.
+				\end{equation}
+				\item An example of an unnumbered equation is
+				\begin{equation*}
+					1 + 1 = 2.
+				\end{equation*}	
+				\item This is how we split equations:
+				\begin{equation}
+					\begin{split}
+						(1 + 2) + 3 &= 3 + 3\\
+						            &= 6\\
+						            &= 6.0
+					\end{split}
+				\end{equation}
+			\end{itemize}
+		\subsection{Integrals, Limits, Summation}
+			\begin{itemize}
+				\item This is an integral: $\int_{0}^{1}f(x)\,dx$.
+				\item This is a limit $\lim_{n\to\infty} (1 + \frac{1}{n})^{n} = e$.
+				\item This is a summation $\sum_{n=0}^{\infty} \frac{1}{n!} = e$.
+			\end{itemize}
+			Some fancy stuff:
+			\begin{equation*}
+				\begin{split}
+					\iint f(x,y)\,dxdy &\leq \frac{\pi^{2}}{6}\\
+					& \geq \frac{1}{1^{2}}+\frac{1}{2^{2}} + \dots\\
+					& \neq 1+\sum_{n=1}^{\infty}\frac{1}{n^{2}}.
+				\end{split}
+			\end{equation*}
+			Partial Derivative example: $\frac{\partial f}{\partial x}$
+		\subsection{Matrices, Vectors}
+			A Matrix:
+			\begin{equation}
+				\begin{pmatrix}
+					1 & 2 & 3 \\
+					4 & 5 & 6 \\
+					7 & 8 & 9 \\
+				\end{pmatrix}
+			\end{equation}
+			\begin{equation}
+				\begin{bmatrix}
+					1 & 2 & 3 \\
+					4 & 5 & 6 \\
+					7 & 8 & 9 \\
+				\end{bmatrix}
+			\end{equation}	
+			A Vector:
+			\begin{equation}
+				\vec{v} = 
+				\begin{bmatrix}
+					x_{1} \\
+					x_{2} \\
+					x_{3} \\
+				\end{bmatrix}
+			\end{equation}
+		% this is mainly for math majors...
+		\subsection{Theorems, Lemma, Definitions, Corollaries}
+			\begin{definition}\label{convergence}
+				Let $(x_{n})_{n=1}^{\infty}$ be a real-valued sequence. A sequence is said to converge to a limit $x \in \mathbb{R}$ if for any given $\varepsilon > 0$, there exists $N \in \mathbb{N}$ such that $n \geq N$ implies $|x_{n} - x| < \varepsilon$.
+			\end{definition}
+			Based on Definition~\ref{convergence} we can prove the following lemma.
+			\begin{lemma}\label{simple lemma}
+				If $x_{n} \to x$, then $|x_{n}| \to |x|$.
+			\end{lemma}
+			\begin{proof}
+				The proof is left as an exercise to readers.
+			\end{proof}
+			\begin{remark}
+				The converse of Lemma~\ref{simple lemma} is not true in general!
+			\end{remark}
+			Refer to \cite{marks-course}
+			\begin{theorem}[Central Limit Theorem]
+				Let $X_{1}, X_{2}, X_{3}, \dots$ be a sequence of IID random variables, with finite mean $\mu$ and variance $\sigma^{2}$. Then
+				\begin{equation}
+					\frac{\bar{X}-\mu}{\sqrt{\sigma^{2}/n}}
+				\end{equation}
+				can be approximated by the standard normal distribution.
+			\end{theorem}
+
+	\newpage
+	\section{Others}
+		\subsection{Tables}
+			\begin{center}
+				\begin{tabular}{| c | c | c |}
+					\hline
+					Name & Age & Favourite Food\\
+					\hline
+					Mark & 25 & Burgers \\
+					John & 18 & Hotdogs \\
+					\hline
+				\end{tabular}	
+			\end{center}
+		\subsection{Figures}
+			This is a figure:
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.5\textwidth]{meme.jpg}
+				\caption{My Favourite Photo}
+			\end{figure}
+	% basic bibliography
+	\begin{thebibliography}{100}
+		\bibitem{marks-course} Mark Ng (2017), \emph{``A First Course in \LaTeX{}''}. NUS Mathematics Society.
+	\end{thebibliography}
+\end{document}

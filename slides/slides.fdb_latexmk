@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485276310 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.pdf" "slides" 1485276312
+["pdflatex"] 1485276310 "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.pdf" "slides" 1485342148
   "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.aux" 1485276312 4546 6846fec6acfe936f69f2840258c1c28e ""
   "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.tex" 1485276310 5520 17b49d31722b708c28174cc895dc4535 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -200,8 +200,8 @@
   "slides.tex" 1485276310 5520 17b49d31722b708c28174cc895dc4535 ""
   "slides.toc" 1485276312 426 0223fa0f601e830fdc3cfbbd1c97db24 ""
   (generated)
-  "slides.toc"
   "slides.out"
+  "slides.toc"
   "slides.snm"
   "slides.nav"
   "/Users/markngsayyao/Dropbox/Code/Github/latex-workshop-2017/slides/slides.pdf"
